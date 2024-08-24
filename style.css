@@ -1,16 +1,33 @@
-body {
+html, body {
     margin: 0;
+    padding: 0;
+    height: 100%;
     font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
+    background-image: url('assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
+    overflow-x: hidden;
 }
 
-.header, .navbar {
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #2c2c2c;
+    padding: 15px 40px;
 }
 
 .navbar .logo {
@@ -25,25 +42,47 @@ body {
 .navbar nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar nav ul li {
+    position: relative;
 }
 
 .navbar nav ul li a {
-    color: #ffffff;
+    color: #b0b0b0;
     text-decoration: none;
     font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
-.navbar nav ul li a.active, .navbar nav ul li a:hover {
-    color: #00aaff;
+.navbar nav ul li a.active,
+.navbar nav ul li a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar nav ul li a.active:before,
+.navbar nav ul li a:hover:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 1px;
 }
 
 .hero {
+    flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-color: #1a1a1a;
+    background-color: rgba(26, 26, 26, 0.8); /* Add transparency to see the background image */
 }
 
 .hero-content {
@@ -86,17 +125,14 @@ body {
     margin: 0;
 }
 
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-}
-
 .info {
+    width: 100%;
     display: flex;
     padding: 20px;
     background-color: #2c2c2c;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .info-box {
