@@ -27,7 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 15px 30px;
 }
 
 .navbar .logo {
@@ -39,41 +39,40 @@ header {
     color: #00aaff;
 }
 
-.navbar nav ul {
-    list-style: none;
+.navbar ul {
     display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.navbar nav ul li {
-    position: relative;
+.navbar ul li {
+    list-style: none;
+    margin: 0 5px;
+    padding-left: 10px;
 }
 
-.navbar nav ul li a {
-    color: #b0b0b0;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.navbar nav ul li a.active,
-.navbar nav ul li a:hover {
+.navbar ul li a {
     color: #ffffff;
-    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 15px;
+    transition: background 0.3s;
 }
 
-.navbar nav ul li a.active:before,
-.navbar nav ul li a:hover:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -5px;
-    height: 2px;
-    background-color: #ffffff;
-    border-radius: 1px;
+.navbar ul li a.active, .navbar ul li a:hover {
+    background: #434343;
+}
+
+.navbar ul li a.donate {
+    background: #007BFF;
+    padding: 15px 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar ul li a.donate:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); 
 }
 
 .hero {
@@ -82,7 +81,33 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-color: rgba(26, 26, 26, 0.8); /* Add transparency to see the background image */
+    background-color: rgba(26, 26, 26, 0.8);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 2.4rem; 
+    margin-bottom: 30px;
+}
+
+.hero a.btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+.hero a.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); 
 }
 
 .hero-content {
@@ -90,13 +115,13 @@ header {
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 3.6rem;
     line-height: 1.2;
     margin-bottom: 20px;
 }
 
 .hero-content p {
-    font-size: 1rem;
+    font-size: 1.6rem; 
     margin-bottom: 20px;
 }
 
@@ -109,61 +134,3 @@ header {
     border-radius: 5px;
 }
 
-.stats {
-    display: flex;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-.stat h3 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-.stat p {
-    font-size: 1rem;
-    margin: 0;
-}
-
-.info {
-    width: 100%;
-    display: flex;
-    padding: 20px;
-    background-color: #2c2c2c;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-
-.info-box {
-    background-color: #0066cc;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.info-box h2 {
-    margin: 0;
-    color: white;
-    font-size: 1.5rem;
-}
-
-.info-box h2 span {
-    color: #00aaff;
-}
-
-.info-box p {
-    margin: 0;
-    font-size: 1rem;
-    color: white;
-}
-
-.info-text {
-    max-width: 50%;
-}
-
-.info-text p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: white;
-}
