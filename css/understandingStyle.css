@@ -1,46 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #181818;
-    color: white;
-    background: url('/assets/background.png') no-repeat center center/cover, 
-                linear-gradient(to right, #000000, #434343);
-    height: 100vh;
-}
-
-.navbar {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    padding: 20px;
-    padding-top: 50px;
-    background-color: transparent;
-}
-
-.navbar ul {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.navbar ul li a.active, .navbar ul li a:hover {
-    background-color: rgba(67, 67, 67, 0.8); 
-    border-radius: 25px;
-}
-
-.hero {
+.hero-poverty {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,12 +15,12 @@ body {
     margin-top: -200px;
 }
 
-.hero h1 {
+.hero-poverty h1 {
     font-size: 4rem; 
     margin-bottom: 20px;
 }
 
-.hero .info-points {
+.hero-poverty .info-points {
     list-style: none;
     padding: 0;
     font-size: 1.2rem;
@@ -70,11 +28,11 @@ body {
     text-align: left;
 }
 
-.hero .info-points li {
+.hhero-poverty .info-points li {
     margin-bottom: 15px;
 }
 
-.hero hr {
+.hero-poverty hr {
     margin-top: 30px;
     border: 0;
     height: 2px;
