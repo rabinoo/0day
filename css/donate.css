@@ -1,0 +1,125 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-image: url('/assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.navbar .logo span {
+    color: #00aaff;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 0 5px;
+    padding-left: 10px;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 15px;
+    transition: background 0.3s;
+}
+
+.navbar ul li a.active, .navbar ul li a:hover {
+    background: #434343;
+}
+
+.navbar ul li a.donate {
+    background: #007BFF;
+    padding: 15px 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar ul li a.donate:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); 
+}
+
+.hero {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: rgba(26, 26, 26, 0.8);
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.donation-box {
+    background-color: rgba(43, 42, 42, 0.9);
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.donation-box h1 {
+    color: #007BFF;
+    font-size: 50px;
+}
+
+.donation-box #p2 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    max-width: 600px;
+    padding-left: 130px;
+}
+.donation-box #p1 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #016de0;
+}
+.donation-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.donation-box ul li {
+    font-size: 1.4rem;
+    margin: 10px 0;
+}
