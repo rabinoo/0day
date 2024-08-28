@@ -66,12 +66,12 @@ header {
 .navbar ul li a.donate {
     background: #ffc400;
     padding: 15px 20px;
-    border-radius: 15px;
+    border-radius: 23px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .navbar ul li a.donate:hover {
-    background-color: #fdfdfd;
+    background-color: #434343;
     transform: scale(1.1); 
     color: #ffc400;
 }
@@ -134,5 +134,3 @@ header {
     text-decoration: none;
     border-radius: 5px;
 }
-
-
