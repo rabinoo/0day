@@ -36,7 +36,7 @@ header {
 }
 
 .navbar .logo span {
-    color: #ffc400;
+    color: #ff9900;
 }
 
 .navbar ul {
@@ -64,7 +64,7 @@ header {
 }
 
 .navbar ul li a.donate {
-    background: #ffc400;
+    background: #ff9900;
     padding: 15px 20px;
     border-radius: 23px;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -73,7 +73,7 @@ header {
 .navbar ul li a.donate:hover {
     background-color: #434343;
     transform: scale(1.1); 
-    color: #ffc400;
+    color: #ff9900;
 }
 
 .hero {
@@ -97,7 +97,7 @@ header {
 }
 
 .hero a.btn {
-    background-color: #ffc400;
+    background-color: #ff9900;
     color: white;
     padding: 12px 25px;
     border-radius: 25px;
@@ -107,7 +107,7 @@ header {
 }
 
 .hero a.btn:hover {
-    background-color: #ffc400;
+    background-color: #ff9900;
     transform: scale(1.1); 
 }
 
@@ -129,7 +129,7 @@ header {
 .hero-content .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffc400;
+    background-color: #ff9900;
     color: white;
     text-decoration: none;
     border-radius: 5px;

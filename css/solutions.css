@@ -4,10 +4,10 @@
     align-items: center;
     text-align: center; 
     padding: 0 20%; 
-    min-height: 100vh; /* Ensure it fills the whole screen */
+    min-height: 100vh; 
     box-sizing: border-box; 
     margin-bottom: 0;
-    overflow-y: auto; /* Allow scrolling if content overflows */
+    overflow-y: auto; 
 }
 
 .hero-content {
@@ -49,9 +49,9 @@
     background-color: #181818;
     color: white;
     box-sizing: border-box;
-    min-height: 100vh; /* Ensure it fills the whole screen */
+    min-height: 100vh; 
     margin-top: 0;
-    overflow-y: auto; /* Allow scrolling if content overflows */
+    overflow-y: auto;
 }
 
 .statistics h2 {
