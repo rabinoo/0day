@@ -1,15 +1,42 @@
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.background-overlay {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: rgba(26, 26, 26, 0.8);
+    z-index: 0;
+}
+
 .contact-container {
     max-width: 1200px;
-    margin: 10px auto;
-    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    background-color: rgba(43, 42, 42, 0.9);
     padding: 20px;
     border-radius: 8px;
-    color: #333;
+    color: rgb(255, 255, 255);
+    z-index: 10; 
+}
+
+.contact-container h1 {
+    color: #ffc400;
+    margin-top: 10px;
 }
 
 .contact-container h2 {
-    text-align: center;
-    color: #333;
+    color: rgb(255, 251, 251);
+    margin-top: -170px;
+    margin-left: -60px;
+
 }
 
 .team-section {
@@ -50,7 +77,7 @@
 }
 
 a {
-    color: #3498db;
+    color: #ffc400;
     text-decoration: none;
 }
 
