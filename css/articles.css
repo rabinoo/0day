@@ -1,7 +1,7 @@
 .background-overlay {
     flex: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 50px;
     background-color: rgba(26, 26, 26, 0.8);
@@ -88,12 +88,11 @@
         color: #ffffff; 
     }
 }
-.title h1 {
-    font-size: 50px;
-    color: #ff9900;
+.title {
     text-align: center;
-    margin:40px;
-   
+    font-size: 30px;
+    color: #ff9900;
+    margin: 70px 10px 0;
 }
 .article {
     float: left;
@@ -101,7 +100,7 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px 30px;
+    margin: 10px 50px;
     max-width: 1500px;
     font-family: Arial, sans-serif;
 }
