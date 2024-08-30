@@ -21,6 +21,8 @@ header {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+/* --- Navbar Desktop Layout--- */
+
 .navbar {
     max-width: 1200px;
     margin: 0 auto;
@@ -36,7 +38,7 @@ header {
 }
 
 .navbar .logo span {
-    color: #ff9900;
+    color: #ffc400;
 }
 
 .navbar ul {
@@ -54,6 +56,7 @@ header {
 .navbar ul li a {
     color: #ffffff;
     text-decoration: none;
+    padding: 8px 15px;
     border-radius: 15px;
     transition: background 0.3s;
 }
