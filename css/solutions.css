@@ -14,6 +14,15 @@ html, body {
     overflow-x: hidden;
 }
 
+.background-overlay {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: rgba(26, 26, 26, 0.8);
+    z-index: 0;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -90,7 +99,6 @@ header {
     justify-content: space-between;
     align-items:baseline;
     padding: 50px;
-    background-color: rgba(26, 26, 26, 0.8);
     margin: 50px;
 }
 
