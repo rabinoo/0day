@@ -30,7 +30,7 @@
 }
 
 .contact-container h1 {
-    color: #ffc400;
+    color: #ff9900;
     font-size: 3.5rem;
     margin-bottom: 20px;
 }
@@ -73,7 +73,7 @@
 }
 
 .contact-container button {
-    background-color: #ffc400;
+    background-color: #ff9900;
     color: #000;
     border: none;
     padding: 15px 30px;
@@ -85,7 +85,7 @@
 
 .contact-container button:hover {
     background-color: #434343;
-    color: #ffc400;
+    color: #ff9900;
     transform: scale(1.1);
 }
 
@@ -125,7 +125,7 @@
 .member-info h3 {
     margin: 0;
     font-size: 1.5rem;
-    color: #ffc400;
+    color: #ff9900;
 }
 
 .member-info p {
@@ -136,7 +136,7 @@
 
 
 a {
-    color: #ffc400;
+    color: #ff9900;
     text-decoration: none;
     transition: color 0.3s ease;
 }
