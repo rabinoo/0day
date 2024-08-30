@@ -100,9 +100,10 @@ a:hover {
         display: block;
         font-size: 30px;
         cursor: pointer;
-        color: #ffcc00;
+        color: #ff9900;
         padding: 10px;
         transition: transform 0.3s ease;
+        margin-left: -100px
     }
 
     #navMenu {
@@ -111,8 +112,10 @@ a:hover {
         background-color: rgba(44, 44, 44, 0.9);
         position: absolute;
         top: 100%;
-        right: 0;
-        width: 450%;
+        left: -120px; 
+        transform: translateX(-30%); 
+        min-width: 200px;
+        max-width: 70%; 
         z-index: 3;
         border-radius: 15px;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -121,15 +124,13 @@ a:hover {
         opacity: 0; 
         max-height: 0; 
     }
-
-
+    
     .hamburger-container:hover #navMenu,
     .hamburger-container:focus-within #navMenu {
         display: flex;
         max-height: 500px; 
         opacity: 1;
     }
-
 
     .navbar nav ul {
         flex-direction: column;
@@ -140,7 +141,8 @@ a:hover {
 
     .navbar nav ul li {
         margin: 0;
-        padding: 15px 10px;
+        max-width: 100%;
+        padding: 10px 10px;
         text-align: center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
@@ -151,6 +153,7 @@ a:hover {
 
     .navbar nav ul li a {
         width: 100%;
+        margin-left: -12px;
         display: block;
         color: #ffffff;
         text-decoration: none;
@@ -159,7 +162,7 @@ a:hover {
     }
 
     .navbar nav ul li a:hover {
-        background-color: rgba(255, 204, 0, 0.2);
+        background-color: rgba(255, 255, 255, 0.2);
         color: #ffffff; 
     }
 }
