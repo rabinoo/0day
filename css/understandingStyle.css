@@ -1,3 +1,5 @@
+/* --- General Styles --- */
+
 .background-overlay {
     position: fixed;
     top: 0;
@@ -29,6 +31,8 @@
     color: #ff9900;
 }
 
+/* --- Hero Section --- */
+
 .hero-poverty {
     display: flex;
     justify-content: center;
@@ -46,7 +50,7 @@
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
-    margin-top: -100px;
+    margin-top: -0px;
 }
 
 .hero-poverty h1 {
@@ -78,6 +82,8 @@
     width: 50%; 
     margin: 40px auto;
 }
+
+/* --- Statistics Section --- */
 
 .statistics {
     padding: 50px 10%;
@@ -156,6 +162,8 @@
     color: #2c2c2c;
 }
 
+/* --- Effects of Poverty Section --- */
+
 .effects-of-poverty {
     padding: 50px 10%;
     text-align: center;
@@ -165,6 +173,7 @@
     position: relative;
     z-index: 2; 
 }
+
 .effects-of-poverty h2 {
     margin-bottom: 50px;
     font-size: 2.5rem;
@@ -177,7 +186,6 @@
     flex-wrap: wrap;
     position: relative;
     z-index: 2;
-
 }
 
 .effect-box {
@@ -219,6 +227,30 @@
 .effect-box:hover {
     transform: translateY(-10px);
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4), -6px -6px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* --- Responsive Adjustments --- */
+
+@media screen and (max-width: 1024px) {
+    .hero-poverty {
+        padding: 0 10%; 
+    }
+    .hero-content {
+        margin-top: 0px;
+    }
+    .hero-poverty h1 {
+        font-size: 3rem;
+        margin-top: -70px;
+    }
+    .hero-poverty .info-points {
+        font-size: 1.1rem;
+    }
+    .statistics h2 {
+        font-size: 2rem;
+    }
+    .effect-box {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 820px) {
@@ -290,5 +322,64 @@
     .navbar nav ul li a:hover {
         background-color: rgba(255, 255, 255, 0.2);
         color: #ffffff; 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero-poverty {
+        padding: 0 5%;
+    }
+    .hero-content {
+        margin-top: -40px;
+    }
+    .hero-poverty h1 {
+        font-size: 2.5rem;
+        margin-top: -50px;
+    }
+    .hero-poverty .info-points {
+        font-size: 1rem;
+    }
+    .stat-box {
+        width: 100%;
+    }
+    .statistics h2 {
+        font-size: 1.8rem;
+    }
+    .effects-of-poverty h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-poverty {
+        padding: 0 5%; 
+        align-items: flex-start;
+    }
+    .hero-content {
+        margin-top: 100px;
+    }
+    .hero-poverty h1 {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .hero-poverty .info-points {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    .statistics h2 {
+        font-size: 1.5rem;
+        margin-top: 0;
+    }
+    .stat-box {
+        width: 100%;
+        height: auto;
+    }
+    .effect-box {
+        width: 100%;
+    }
+    .effects-of-poverty h2 {
+        font-size: 1.8rem;
     }
 }
