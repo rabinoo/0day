@@ -11,6 +11,16 @@ html, body {
     overflow-x: hidden;
 }
 
+.background-overlay {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: rgba(26, 26, 26, 0.8);
+    z-index: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -19,6 +29,11 @@ body {
 header {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 /* --- Navbar Desktop Layout--- */
