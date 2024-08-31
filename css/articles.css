@@ -102,12 +102,13 @@
     margin: 20px 30px;
     max-width: 1500px;
     font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 2;
 }
 
 .article h2 {
     font-size: 24px;
-    color: #ffffff;
+    color: #ff9900;
     margin-bottom: 10px;
 }
 
@@ -129,6 +130,10 @@
     font-size: 16px;
     color: #ffffff;
     margin-bottom: 20px;
+}
+.article:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
 }
 
 .read-more {
