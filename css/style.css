@@ -162,7 +162,7 @@ header {
     text-decoration: none;
     border-radius: 5px;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
     .hamburger {
         display: block;
         font-size: 30px;
@@ -282,6 +282,7 @@ header {
         text-decoration: none;
         font-size: 1.5rem;
         transition: transform 0.3s ease, background-color 0.3s ease; 
+        margin-left: 30%;
     }
     
     .hero a.btn:hover {
@@ -295,7 +296,165 @@ header {
     }
     
     .hero-content h1 {
-        font-size: 4rem;
+        font-size: 3rem;
+        line-height: 1.1;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .hero-content p {
+        font-size: 1.5rem; 
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    .hero-content .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff9900;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-left: 185px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #ff9900;
+        padding: 10px;
+        transition: transform 0.3s ease;
+        margin-left: -100px
+    }
+
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(44, 44, 44, 0.9);
+        position: absolute;
+        top: 100%;
+        left: -120px; 
+        transform: translateX(-30%); 
+        min-width: 200px;
+        max-width: 70%; 
+        z-index: 3;
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 0; 
+        max-height: 0; 
+    }
+    
+    .hamburger-container:hover #navMenu,
+    .hamburger-container:focus-within #navMenu {
+        display: flex;
+        max-height: 500px; 
+        opacity: 1;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar nav ul li {
+        margin: 0;
+        max-width: 100%;
+        padding: 10px 10px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    .navbar nav ul li a {
+        width: 100%;
+        margin-left: -12px;
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #ffffff; 
+    }
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background-image: url('/assets/background.png');
+        background-size:auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        overflow-x: hidden;
+    }
+    
+    .background-overlay {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        background-color: rgba(26, 26, 26, 0.8);
+        z-index: 0;
+    }
+    .hero {
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        background-color:  rgba(26, 26, 26, 0.8);
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+    
+    .hero p {
+        font-size: 2.4rem; 
+        margin-bottom: 30px;
+    }
+    
+    .hero a.btn {
+        background-color: #ff9900;
+        color: white;
+        padding: 17px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 0.6rem;
+        transition: transform 0.3s ease, background-color 0.3s ease; 
+        margin-right: 30%;
+    }
+    
+    .hero a.btn:hover {
+        background-color: #ff9900;
+        transform: scale(1.1); 
+    }
+    
+    .hero-content {
+        max-width: 100%;
+        margin-top: -200px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
         line-height: 1.1;
         margin-bottom: 10px;
         text-align: center;
@@ -318,4 +477,3 @@ header {
         margin-left: 185px;
     }
 }
-
