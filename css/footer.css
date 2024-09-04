@@ -1,3 +1,4 @@
+ /* Desktop Interface */
 html, body {
     margin: 0;
     padding: 0;
@@ -80,4 +81,179 @@ main {
     background-color: #434343;
     transform: scale(1.1);
     color: #ff9900;
+}
+
+ /* Ipad Mini Interface */
+@media screen and (max-width: 768px) {
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background-image: url('/assets/background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        overflow-x: hidden;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    header {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    
+    
+    main {
+        flex: 1; 
+        margin-top: 80px; 
+    }
+    
+    .site-footer {
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 40px 10%;
+        color: white;
+        position: relative;
+        z-index: 2;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+        margin-top: auto;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .footer-logo {
+        font-size: 1rem;
+    }
+    
+    .footer-logo span {
+        color: #ff9900;
+    }
+    
+    .footer-info {
+        text-align: center;
+        flex: 1;
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+    
+    .back-to-top .btn-top {
+        background-color: #ff9900;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 0.8rem;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .back-to-top .btn-top:hover {
+        background-color: #434343;
+        transform: scale(1.1);
+        color: #ff9900;
+    }
+}
+ /* Iphone Interface */
+@media screen and (max-width: 430px) {
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background-image: url('/assets/background.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        overflow-x: hidden;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    header {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    
+    
+    main {
+        flex: 1; 
+        margin-top: 80px; 
+    }
+    
+    .site-footer {
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 40px 10%;
+        color: white;
+        position: relative;
+        z-index: 2;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.5);
+        margin-top: auto;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .footer-logo {
+        font-size: 0.5rem;
+    }
+    
+    .footer-logo span {
+        color: #ff9900;
+    }
+    
+    .footer-info {
+        text-align: center;
+        flex: 1;
+        font-size: 0.4rem;
+        line-height: 1.4;
+    }
+    
+    .back-to-top .btn-top {
+        background-color: #ff9900;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 0.4rem;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .back-to-top .btn-top:hover {
+        background-color: #434343;
+        transform: scale(1.1);
+        color: #ff9900;
+    }
 }
