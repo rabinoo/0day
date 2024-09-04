@@ -220,14 +220,15 @@ main {
     
     .footer-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 20px;
         align-items: center;
         max-width: 1200px;
         margin: 0 auto;
     }
     
     .footer-logo {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
     
     .footer-logo span {
@@ -237,7 +238,7 @@ main {
     .footer-info {
         text-align: center;
         flex: 1;
-        font-size: 0.4rem;
+        font-size: 0.6rem;
         line-height: 1.4;
     }
     
@@ -247,7 +248,7 @@ main {
         padding: 10px 15px;
         border-radius: 25px;
         text-decoration: none;
-        font-size: 0.4rem;
+        font-size: 0.6rem;
         transition: transform 0.3s ease, background-color 0.3s ease;
     }
     
