@@ -212,7 +212,7 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 50px;
-        padding-top: 150px;
+        padding-top: 100px;
         padding-bottom: 200px;
         background-color: rgba(255, 255, 255, 0.815);
     }
@@ -222,11 +222,11 @@ header {
     }
 
     .hero-video {
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .hero-video video {
-        width: 100%;
+        width: 90%;
         height: auto;
         border-radius: 10px; 
         border:2px solid#0099ff;
@@ -236,20 +236,6 @@ header {
         transform: scale(1.02);
         border: 3px solid rgb(5, 5, 5);
     }
-
-    .hero h1 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-        line-height: 1.2;
-        color: #0099ff;
-    }
-    
-    .hero p {
-        color: #000000;
-        font-size: 2.4rem; 
-        margin-bottom: 30px;
-    }
-    
     .hero a.btn {
         background-color: #0099ff;
         color: white;
@@ -273,17 +259,22 @@ header {
     }
     
     .hero-content h1 {
-        font-size: 3rem;
+        color: #0099ff;
+        font-size: 1.8rem;
         line-height: 1.1;
         margin-bottom: 10px;
+        margin-top: 220px;
         text-align: center;
     }
     
     .hero-content p {
-        font-size: 1.5rem; 
+        font-size: 1.2rem; 
         margin-top: 40px;
         margin-bottom: 40px;
         text-align: center;
+        max-width: 60%;
+        color: #000000;
+        margin-left: 140px;
     }
     
     .hero-content .btn {
@@ -391,6 +382,7 @@ header {
         align-items: center;
         padding: 50px;
         padding-top: 120px;
+        padding-bottom: 140px;
         background-color: rgba(255, 255, 255, 0.815);
     }
 
@@ -400,19 +392,6 @@ header {
 
     .hero-video {
         margin-top: 20px;
-    }
-
-    .hero h1 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-        line-height: 1.2;
-        color: #0099ff;
-    }
-    
-    .hero p {
-        color: #000000;
-        font-size: 2.4rem; 
-        margin-bottom: 30px;
     }
     
     .hero a.btn {
@@ -438,14 +417,14 @@ header {
     }
     
     .hero-content h1 {
-        font-size: 3rem;
+        font-size: 1.8rem;
         line-height: 1.1;
         margin-bottom: 10px;
         text-align: center;
     }
     
     .hero-content p {
-        font-size: 1.5rem; 
+        font-size: 1.2rem; 
         margin-top: 40px;
         margin-bottom: 40px;
         text-align: center;
@@ -468,8 +447,8 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 50px;
-        padding-top: 100px;
-        padding-bottom: 180px;
+        padding-top: 180px;
+        padding-bottom: 190px;
     }
 
     .hero-content, .hero-video {
@@ -478,20 +457,8 @@ header {
 
     .hero-video {
         margin-top: 1px;
-        padding-top: 1rem;
     }
-
-    .hero h1 {
-        font-size: 2.5rem;
-        margin-bottom: 20px;
-        line-height: 1.2;
-    }
-
-    .hero p {
-        font-size: 2.4rem;
-        margin-bottom: 30px;
-    }
-
+    
     .hero a.btn {
         background-color: #0099ff;
         color: white;
@@ -514,13 +481,12 @@ header {
 
     .hero-content {
         max-width: 100%;
-        margin-top: -500px;
     }
 
     .hero-content h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         line-height: 1.1;
-        margin-bottom: 10px;
+        margin-bottom: 10px; 
         text-align: center;
     }
 
@@ -529,6 +495,8 @@ header {
         margin-top: 40px;
         margin-bottom: 40px;
         text-align: center;
+        margin-left: 5px;
+        max-width: 100%;
     }
 
     .hero-content .btn {
