@@ -295,7 +295,6 @@ header {
         border-radius: 5px;
         margin-left: 185px;
     }
-}
 
     .hamburger {
         display: block;
@@ -384,7 +383,7 @@ header {
         transform: scale(1.1); 
         color: #0099ff;
     }
-
+}
 @media screen and (max-width: 768px) {
     .hero {
         flex-direction: column-reverse; 
