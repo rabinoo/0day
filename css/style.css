@@ -10,7 +10,6 @@ html, body {
     color: white;
     overflow-x: hidden;
 }
-
 .background-overlay {
     flex: 1;
     display: flex;
@@ -110,7 +109,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-color:  rgba(26, 26, 26, 0.8);
+    background-color: rgba(26, 26, 26, 0.8);
+    gap: 30px; 
 }
 
 .hero h1 {
@@ -163,7 +163,36 @@ header {
     border-radius: 5px;
 }
 
+.hero-video {
+    max-width: 45%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    border:2px solid#ff9900;
+    margin-top: 45px;
+}
+.hero-video video:hover {
+    transform: scale(1.02);
+    border: 2px solid white;
+}
 @media screen and (max-width: 820px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content, .hero-video {
+        max-width: 100%;
+    }
+
+    .hero-video {
+        margin-top: 20px;
+    }
     .hamburger {
         display: block;
         font-size: 30px;
@@ -261,11 +290,19 @@ header {
         flex: 1;
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
         align-items: center;
         padding: 50px;
+        padding-top: 350px;
         background-color:  rgba(26, 26, 26, 0.8);
     }
-    
+    .hero-content, .hero-video {
+        max-width: 100%;
+    }
+
+    .hero-video {
+        margin-top: 20px;
+    }
     .hero h1 {
         font-size: 2.5rem;
         margin-bottom: 20px;
@@ -285,7 +322,7 @@ header {
         text-decoration: none;
         font-size: 1.5rem;
         transition: transform 0.3s ease, background-color 0.3s ease; 
-        margin-left: 30%;
+        margin-left: 33%;
     }
     
     .hero a.btn:hover {
@@ -350,9 +387,19 @@ header {
         flex: 1;
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
         align-items: center;
         padding: 50px;
+        padding-top: 350px;
         background-color:  rgba(26, 26, 26, 0.8);
+    }
+    .hero-content, .hero-video {
+        max-width: 100%;
+    }
+
+    .hero-video {
+        margin-top: 1px;
+        padding-top: 1rem;
     }
     
     .hero h1 {

@@ -1,3 +1,10 @@
+.background-overlay {
+    display: block;
+    padding: 50px;
+    background-color: rgba(26, 26, 26, 0.8);
+    z-index: 0;
+}
+
 .hamburger-container {
     position: relative;
 }
@@ -8,44 +15,54 @@
     cursor: pointer;
     color: #ffcc00;
 }
-.article-container {
-    flex: 1; 
-    width: 100%;
-    background-color: rgba(26, 26, 26, 0.8);
-    padding-bottom: 20px;
+
+.title {
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0 20px;
 }
 
 .title h1 {
     font-size: 50px;
     color: #ff9900;
-    text-align: center;
-    margin:90px 30px 0;
     z-index: 1;
-   
 }
-.article {
-    float: left;
-    background-color: rgba(66, 66, 66, 0.55);
+
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px; 
     padding: 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.article {
+    background-color: rgba(66, 66, 66, 0.9); 
     border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px 30px;
-    max-width: 1500px;
-    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    z-index: 2;
+    overflow: hidden;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; 
 }
 
 .article h2 {
-    font-size: 24px;
-    color: #ff9900;
-    margin-bottom: 10px;
+    font-size: 20px;
+    color: #ff9900; 
+    margin: 15px 0;
 }
 
 .author-info {
     font-size: 14px;
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .author-info .author {
@@ -59,21 +76,22 @@
 .description {
     font-size: 16px;
     color: #ffffff;
-    margin-bottom: 20px;
-}
-.article:hover{
-    transform:translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+    margin-bottom: 15px;
 }
 
 .read-more {
-    color: #ff9900;
+    color: #ff9900; 
     text-decoration: none;
     font-weight: bold;
 }
 
 .read-more:hover {
     text-decoration: underline;
+}
+
+.article:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
 }
 
 @media screen and (max-width: 820px) {
@@ -84,7 +102,7 @@
         color: #ff9900;
         padding: 10px;
         transition: transform 0.3s ease;
-        margin-left: -100px
+        margin-left: -100px;
     }
 
     #navMenu {
@@ -146,5 +164,4 @@
         background-color: rgba(255, 255, 255, 0.2);
         color: #ffffff; 
     }
-
 }
