@@ -1,39 +1,4 @@
  /* Desktop Interface */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background-image: url('/assets/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    overflow-x: hidden;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-header {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-
-main {
-    flex: 1; 
-    margin-top: 80px; 
-}
-
 .site-footer {
     background-color: rgba(0, 0, 0, 0.9);
     padding: 40px 10%;
@@ -86,41 +51,6 @@ main {
  /* Ipad Mini Interface */
 @media screen and (max-width: 768px) {
 
-    html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        font-family: Arial, sans-serif;
-        background-image: url('/assets/background.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        color: white;
-        overflow-x: hidden;
-    }
-    
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-    
-    header {
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-    }
-    
-    
-    main {
-        flex: 1; 
-        margin-top: 80px; 
-    }
-    
     .site-footer {
         background-color: rgba(0, 0, 0, 0.9);
         padding: 40px 10%;
@@ -172,41 +102,6 @@ main {
 }
  /* Iphone Interface */
 @media screen and (max-width: 430px) {
-
-    html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        font-family: Arial, sans-serif;
-        background-image: url('/assets/background.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        color: white;
-        overflow-x: hidden;
-    }
-    
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
-    
-    header {
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
-    }
-    
-    
-    main {
-        flex: 1; 
-        margin-top: 80px; 
-    }
     
     .site-footer {
         background-color: rgba(0, 0, 0, 0.9);
