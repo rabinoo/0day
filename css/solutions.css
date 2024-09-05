@@ -314,7 +314,7 @@ section h2 {
         margin-top: 10%;
     }
 
-    section h2 {
+    .section-container h2 {
         font-size: 1.8rem;
         margin-bottom: 15px;
         color: #0099ff;
