@@ -212,8 +212,6 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 50px;
-        padding-top: 100px;
-        padding-bottom: 200px;
         background-color: rgba(255, 255, 255, 0.815);
     }
 
@@ -230,7 +228,7 @@ header {
         height: auto;
         border-radius: 10px; 
         border:2px solid#0099ff;
-        margin-top: 45px;
+        margin-top: 90px;
     }
     .hero-video video:hover {
         transform: scale(1.02);
@@ -447,8 +445,6 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 50px;
-        padding-top: 180px;
-        padding-bottom: 190px;
     }
 
     .hero-content, .hero-video {

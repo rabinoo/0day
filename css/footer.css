@@ -36,7 +36,7 @@ main {
 
 .site-footer {
     background-color: rgba(0, 0, 0, 0.9);
-    padding: 40px 10%;
+    padding: 10px 10%;
     color: white;
     position: relative;
     z-index: 2;
@@ -123,7 +123,7 @@ main {
     
     .site-footer {
         background-color: rgba(0, 0, 0, 0.9);
-        padding: 40px 10%;
+        padding: 10px 10%;
         color: white;
         position: relative;
         z-index: 2;
@@ -209,8 +209,8 @@ main {
     }
     
     .site-footer {
-        background-color: rgba(0, 0, 0, 0.9);
-        padding: 40px 10%;
+        background-color: rgba(75, 73, 73, 0.9);
+        padding: 10px 10%;
         color: white;
         position: relative;
         z-index: 2;
@@ -232,7 +232,7 @@ main {
     }
     
     .footer-logo span {
-        color: #ff9900;
+        color: #0099ff;
     }
     
     .footer-info {
@@ -243,7 +243,7 @@ main {
     }
     
     .back-to-top .btn-top {
-        background-color: #ff9900;
+        background-color: #0099ff;
         color: white;
         padding: 10px 15px;
         border-radius: 25px;
@@ -255,6 +255,6 @@ main {
     .back-to-top .btn-top:hover {
         background-color: #434343;
         transform: scale(1.1);
-        color: #ff9900;
+        color: #0099ff;
     }
 }
