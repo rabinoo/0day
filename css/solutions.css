@@ -278,11 +278,6 @@ section h2 {
         overflow-x: hidden;
     }
 
-    .navbar {
-        background-color: rgba(44, 44, 44, 0.9);
-        padding: 10px;
-    }
-
     .navbar .logo {
         font-size: 1.4rem;
     }
