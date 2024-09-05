@@ -330,7 +330,7 @@
 
 @media screen and (max-width: 430px) {
     .hero-poverty {
-        padding: 0 5%; 
+        padding: 5%; 
         align-items: flex-start;
     }
     .hero-content {
@@ -339,6 +339,7 @@
     .hero-poverty h1 {
         font-size: 2rem;
         margin-bottom: 10px;
+        color: #0099ff
     }
     .hero-poverty .info-points {
         font-size: 0.9rem;
@@ -348,18 +349,67 @@
         font-size: 1.5rem;
         margin-top: 0;
     }
-    .stat-box {
-        width: 100%;
-        height: auto;
-    }
     .hero a.btn:hover {
         width: 100%;
-        background-color: #ff9900;
-    }
-    .effect-box {
-        width: 100%;
+        background-color: #0099ff;
     }
     .effects-of-poverty h2 {
         font-size: 1.8rem;
+    }
+
+    .section-container {
+        display: flex;
+        flex-direction: column;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        gap: 15px;
+        padding: 20px 0;
+        background-color: rgba(26, 26, 26, 0);
+    }
+
+    .statistics, .effects-of-poverty {
+        min-width: 100%;
+        scroll-snap-align: start;
+        box-sizing: border-box;
+        background-color: rgba(66, 66, 66, 0.55);
+        border-radius: 12px;
+        text-align: center;
+        padding-bottom: 20px;
+        color: #0099ff
+    }
+
+    .statistics h2, .effects-of-poverty h2, .effects-of-poverty h3 {
+        color: #0099ff
+    }
+    .table-container th, .hero-poverty hr {
+        background-color: #0099ff;
+        color: white;
+    }
+
+    .stats-container, .effects-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow-x: auto;
+        gap: 30px;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        padding: 10px 0;
+        width: 350px;
+    }
+
+    .stat-box, .effect-box {
+        flex: 0 0 auto;
+        width: 150%;
+        max-width: 300px;
+        height: auto;
+        background-color: rgba(66, 66, 66, 0.55);
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 }
