@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
-    background-image: url('/assets/background.png');
+    background-image: url('/assets/mbackground.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,12 +46,13 @@ header {
 }
 
 .donation-box h1 {
-    color: #ff9900;
+    color: #0099ff;
     font-size: 50px;
 }
 
 .donation-box #p2 {
     margin-bottom: 20px;
+    color: #ffffff;
     font-size: 1.2rem;
     max-width: 600px;
     padding-left: 130px;
@@ -61,7 +62,7 @@ header {
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: 1.2rem;
-    color: #ff9900;
+    color: #0099ff;
 }
 
 .donation-buttons {
@@ -72,7 +73,7 @@ header {
 }
 
 .donation-buttons a {
-    background-color: #ff9900;
+    background-color: #0099ff;
     text-decoration: none;
     color: #ffffff;
     border: none;
@@ -201,10 +202,12 @@ header {
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
+        
     }
 
     .donation-box h1 {
         font-size: 2rem; 
+        margin-top: 20px;
     }
 
     .donation-box #p2 {
@@ -230,10 +233,16 @@ header {
         padding: 10px 26px;
         font-size: 0.9rem; 
     }
+    .hero {
+        background-color: rgba(26, 26, 26, 0.8);
 
 }
+    .hero-content{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
 
 
 @media screen and (max-width: 430px) {
 
+}
 }
