@@ -22,9 +22,10 @@
     padding: 50px 0 20px;
 }
 
-.title h1 {
-    font-size: 50px;
+.title h2 {
+    font-size: 40px;
     color: #ff9900;
+    margin-bottom: -10px;
     z-index: 1;
 }
 
