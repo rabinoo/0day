@@ -199,6 +199,9 @@
     .navbar .logo {
         font-size: 1.6rem;
     }
+    .navbar .logo span {
+        font-size: 1.6rem;
+    }
 
     .hamburger {
         color: #ffffff;
@@ -291,7 +294,10 @@
 
 @media screen and (max-width: 430px) {
     .navbar .logo {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+    }
+    .navbar .logo span {
+        font-size: 1.3rem;
     }
 
     .hamburger {
