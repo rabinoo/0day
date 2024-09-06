@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
-    background-image: url('/assets/mbackground.png');
+    background-image: url('/assets/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@ header {
 }
 
 .donation-box h1 {
-    color: #0099ff;
+    color: #ff9900;
     font-size: 50px;
 }
 
@@ -62,7 +62,7 @@ header {
     margin-top: 40px;
     margin-bottom: 20px;
     font-size: 1.2rem;
-    color: #0099ff;
+    color: #ff9900;
 }
 
 .donation-buttons {
@@ -73,7 +73,7 @@ header {
 }
 
 .donation-buttons a {
-    background-color: #0099ff;
+    background-color: #ff9900;
     text-decoration: none;
     color: #ffffff;
     border: none;
@@ -188,16 +188,31 @@ header {
         transition: transform 0.3s ease, background-color 0.3s ease;
     }
     
+    
     .navbar ul li a.donate:hover {
         background-color: #ffffff;
         transform: scale(1.1); 
         color: #0099ff;
     }
 
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background-image: url('/assets/mbackground.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        overflow-x: hidden;
+    }
+
     .donation-box {
         padding: 20px;
         margin-top: 60px;
         text-align: center; 
+        align-items: center;
         width: 90%; 
         max-width: 600px;
         margin-left: auto;
@@ -208,29 +223,38 @@ header {
     .donation-box h1 {
         font-size: 2rem; 
         margin-top: 20px;
+        color: #0099ff;
     }
 
     .donation-box #p2 {
+        text-align: justify;
         font-size: 1rem;
-        text-align:justify; 
         max-width: 100%; 
-        padding-left: 0;
+        padding: 10px;
+        align-items: center;
+               
     }
 
     .donation-box #p1 {
         margin-top: 20px;
         font-size: 1rem;
+        color: #0099ff;
+        margin: auto;
+        padding: 10px;
+        margin-bottom: 10px;
     }
 
     .donation-buttons {
-        flex-direction: column; 
-        margin-top: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-
-    .donation-buttons a {
+    
+       .donation-buttons a {
         margin-bottom: 15px; 
+        background-color: #0099ff;
         width: 80%;
-        padding: 10px 26px;
+        padding: 10px 25px;
         font-size: 0.9rem; 
     }
     .hero {
@@ -239,6 +263,10 @@ header {
 }
     .hero-content{
         background-color: rgba(255, 255, 255, 0.2);
+
+    }
+    .hero-content #p2{
+        margin-left: 0px;
     }
 
 
