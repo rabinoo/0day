@@ -113,10 +113,10 @@
         display: block;
         font-size: 30px;
         cursor: pointer;
-        color: #ff9900;
         padding: 10px;
         transition: transform 0.3s ease;
         margin-left: -100px;
+        color: #ffffff;
     }
 
     #navMenu {
@@ -204,10 +204,7 @@
         font-size: 1.6rem;
     }
 
-    .hamburger {
-        color: #ffffff;
-        font-size: 30px;
-    }
+
 
     section {
         min-width: 100%;
@@ -302,7 +299,7 @@
     }
 
     .hamburger {
-        color: #0099ff;
+        color: #ffffff;
         font-size: 30px;
     }
 
