@@ -169,7 +169,7 @@ header {
     #navMenu {
         display: none;
         flex-direction: column;
-        background-color: rgba(44, 44, 44, 0.9);
+        background-color: rgba(0, 153, 255, 0.863);
         position: absolute;
         top: 100%;
         left: -120px; 
@@ -178,7 +178,7 @@ header {
         max-width: 70%; 
         z-index: 3;
         border-radius: 15px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 16px rgb(255, 255, 255);
         overflow: hidden;
         transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
         opacity: 0; 
@@ -223,8 +223,27 @@ header {
 
     .navbar nav ul li a:hover {
         background-color: rgba(255, 255, 255, 0.2);
-        color: #ffffff; 
+        color: #0099ff; 
     }
+
+    .navbar ul li a.active, .navbar ul li a:hover {
+        background: #ffffff7c;
+        color: #ffffff;
+    }
+
+    .navbar ul li a.donate {
+        background: #2e2e2e;
+        padding: 15px 20px;
+        border-radius: 23px;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .navbar ul li a.donate:hover {
+        background-color: #ffffff;
+        transform: scale(1.1); 
+        color: #0099ff;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
