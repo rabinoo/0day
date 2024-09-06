@@ -335,10 +335,7 @@
         transform: scale(1.1); 
         color: #0099ff;
     }
-}
 
-
-@media screen and (max-width: 768px) {
     .hero-poverty {
         padding: 0 5%;
     }

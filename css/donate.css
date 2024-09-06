@@ -21,61 +21,6 @@ header {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-.navbar {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-}
-
-.navbar .logo {
-    font-size: 1.5rem;
-    color: #ffffff;
-}
-
-.navbar .logo span {
-    color: #ff9900;
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar ul li {
-    list-style: none;
-    margin: 0 5px;
-    padding-left: 10px;
-}
-
-.navbar ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 15px;
-    transition: background 0.3s;
-}
-
-.navbar ul li a.active, .navbar ul li a:hover {
-    background: #434343;
-}
-
-.navbar ul li a.donate {
-    background: #ff9900;
-    padding: 15px 20px;
-    border-radius: 23px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.navbar ul li a.donate:hover {
-    background-color: #434343;
-    transform: scale(1.1); 
-    color: #ff9900;
-}
-
 .hero {
     flex: 1;
     display: flex;
@@ -160,7 +105,7 @@ header {
         display: block;
         font-size: 30px;
         cursor: pointer;
-        color: #ff9900;
+        color: #ffffff;
         padding: 10px;
         transition: transform 0.3s ease;
         margin-left: -100px;
@@ -190,6 +135,10 @@ header {
         display: flex;
         max-height: 500px; 
         opacity: 1;
+    }
+    
+    .navbar {
+        background-color: rgb(2, 110, 182)
     }
 
     .navbar nav ul {
@@ -244,9 +193,6 @@ header {
         color: #0099ff;
     }
 
-}
-
-@media screen and (max-width: 768px) {
     .donation-box {
         padding: 20px;
         margin-top: 60px;
@@ -284,6 +230,7 @@ header {
         padding: 10px 26px;
         font-size: 0.9rem; 
     }
+
 }
 
 

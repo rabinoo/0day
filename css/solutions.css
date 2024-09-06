@@ -265,10 +265,8 @@ section h2 {
         transform: scale(1.1); 
         color: #0099ff;
     }
-}
 
-@media screen and (max-width: 768px) {
-
+    
     .navbar .logo {
         font-size: 1.2rem;
     }
@@ -361,6 +359,10 @@ section h2 {
         transform: scale(1.1);
         background-color: #0099ff;
     }
+}
+
+@media screen and (max-width: 768px) {
+
 }
 
 @media screen and (max-width: 430px) {
