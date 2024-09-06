@@ -380,6 +380,8 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 50px;
+        padding-top: 90px;
+        padding-bottom: 130px;
     }
 
     .hero-content, .hero-video {
@@ -387,7 +389,7 @@ header {
     }
 
     .hero-video {
-        margin-top: 1px;
+        margin-top: 1px;;
     }
     
     .hero a.btn {
