@@ -55,7 +55,10 @@ header {
     color: #ffffff;
     font-size: 1.2rem;
     max-width: 600px;
-    padding-left: 130px;
+    text-align: justify;
+    display: flex;
+    margin: 0 auto;
+    
 }
 
 .donation-box #p1 {
@@ -63,6 +66,7 @@ header {
     margin-bottom: 20px;
     font-size: 1.2rem;
     color: #ff9900;
+    padding: 20px;
 }
 
 .donation-buttons {
