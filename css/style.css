@@ -177,6 +177,10 @@ header {
     border:2px solid#ff9900;
     margin-top: 45px;
 }
+.responsive-video {
+    width: 100%;
+    height: auto;
+}
 .hero-video video:hover {
     transform: scale(1.02);
     border: 2px solid white;
