@@ -96,7 +96,6 @@ section h2 {
 .info-points li:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
-    transform: rotate(720deg);
 }
 
 .solutions-container li strong, 
