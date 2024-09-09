@@ -302,7 +302,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 430px) {
+     @media screen and (max-width: 430px) {
     html, body {
         margin: 0;
         padding: 0;
