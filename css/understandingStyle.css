@@ -168,6 +168,9 @@ main {
     font-size: 1.3rem;
 }
 
+.table-container tr:nth-child(even) {
+    background-color: #131111; 
+}
 /* --- Effects of Poverty Section --- */
 
 .effects-of-poverty {
