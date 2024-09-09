@@ -43,6 +43,7 @@ html, body {
     padding: 40px 20px;
     margin: 80px auto 0 auto;
     background-color: rgba(26, 26, 26, 0.8);
+    animation: slideUp 1.5s ease-out forwards;
 }
 section {
     margin-bottom: 40px;
@@ -95,6 +96,7 @@ section h2 {
 .info-points li:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+    transform: rotate(720deg);
 }
 
 .solutions-container li strong, 
@@ -462,4 +464,15 @@ section h2 {
     }
 
 
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

@@ -31,6 +31,9 @@
     color: #ff9900;
 }
 
+main {
+    animation: slideUp 1.5s ease-out forwards;
+}
 /* --- Hero Section --- */
 
 .hero-poverty {
@@ -40,7 +43,7 @@
     text-align: center;
     min-height: 55vh;
     box-sizing: border-box;
-    margin-top: 10%;
+    padding: 25%;
     overflow-y: auto;
     position: relative;
     z-index: 1;
@@ -337,7 +340,8 @@
     }
 
     .hero-poverty {
-        padding: 0 5%;
+        padding: 20%;
+        margin-top: 10%;
     }
     .hero-content {
         margin-top: -40px;
@@ -526,5 +530,16 @@
 
     .effect-box img {
         height: 200px;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

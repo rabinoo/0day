@@ -3,6 +3,7 @@
     padding: 50px;
     background-color: rgba(26, 26, 26, 0.8);
     z-index: 0;
+    animation: slideUp 1.5s ease-out forwards;
 }
 
 .hamburger-container {
@@ -32,7 +33,7 @@
 .article-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-    gap: 20px; 
+    gap: 30px; 
     padding: 20px;
     max-width: 1200px; 
     margin: 0 auto; 
@@ -93,6 +94,7 @@
 .article:hover {
     transform: translateY(-5px); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+    transform: rotate(720deg);
 }
 
 @media screen and (max-width: 820px) {
@@ -384,5 +386,16 @@
         border-radius: 10px;
         margin-bottom: 15px;
         padding-top: 0;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

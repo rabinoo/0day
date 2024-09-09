@@ -15,6 +15,7 @@
     padding: 50px;
     background-color: rgba(26, 26, 26, 0.8);
     z-index: 0;
+    animation: slideUp 1.5s ease-out forwards;
 }
 
 .contact-container {
@@ -339,5 +340,16 @@ a:hover {
     .team-photo {
         width: 100px;
         height: 100px;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

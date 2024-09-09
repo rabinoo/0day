@@ -44,6 +44,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
+    animation: slideDown 1.5s ease-out forwards;
 }
 
 .navbar .logo {
@@ -111,6 +112,7 @@ header {
     padding: 50px;
     background-color: rgba(26, 26, 26, 0.8);
     gap: 30px; 
+    animation: slideUp 1.5s ease-out forwards;
 }
 
 .hero h1 {
@@ -441,5 +443,27 @@ header {
         color: white;
         text-decoration: none;
         border-radius: 5px;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
